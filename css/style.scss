@@ -244,7 +244,7 @@ header {
                     }
                 }
                 p {
-                    color: #7f8c8d;
+                    color: #d8dcdc;
                     position: relative;
                     &:before {
                         content: '';
@@ -258,7 +258,7 @@ header {
                         animation-delay: .6s;
                     }
                 }
-                a {
+                .button-custom {
                     color: #d63031;
                     position: relative;
                     letter-spacing: 2px;
@@ -390,12 +390,60 @@ footer {
     height: 60vh;
     background: #222222;
     padding: 10%;
-        .col-lg-4 {
-            text-align: center;
-                a {
-                    color: #7f8c8d;
-                }
+    .mark {
+        color: #d63031;
+        background: transparent;
+    }
+    a,p {
+        color: #d8dcdc;
+    }
+    a {
+        transition: 300ms;
+        padding-top: 0 !important;
+        padding-bottom: 5px !important;
+        &:hover {
+            color: #c3c3c3;
+            transition: 300ms;
         }
+    }
+    .form-div {
+        .form-control {
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+        }
+        .text-wrap {
+            overflow: hidden;
+        }
+        a {
+            color: #d63031;
+            position: relative;
+            letter-spacing: 2px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -110%;
+                height: 1px;
+                width: 100%;
+                background: #d63031;
+                transition: all 300ms ease-in-out;
+            }
+            &:hover:before {
+                left: 0;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .footer-logo {
+        color: #d63031;
+        font-size: 40px !important;
+    }
 }
 
 
